@@ -43,7 +43,7 @@ jobs:
         run: scripts/jshint-script.sh
 
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: linting tool report
           path: |
@@ -92,21 +92,28 @@ jobs:
 
       - name: OWASP Dependency Check
         run: |
-          wget https://github.com/jeremylong/DependencyCheck/releases/download/v7.2.0/dependency-check-7.2.0-release.zip
-          unzip dependency-check-7.2.0-release.zip
+          wget https://github.com/dependency-check/DependencyCheck/releases/download/v12.1.1/dependency-check-12.1.1-release.zip
+          unzip dependency-check-12.1.1-release.zip
 
       - name: Run scan with ODC
         run: |
-          dependency-check/bin/dependency-check.sh --project "bitcoin" --scan . > ODC-report
+          dependency-check/bin/dependency-check.sh --project "bitcoin" --nvdApiKey ${{ secrets.WORKSHOP6_NVD_API_KEY }} --out . --scan .
 
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: sast report
           path: |
-            ./ODC-report
+            ./dependency-check-report.html
+
 
 ```
+
+2. Apply NVD API Key from the following website https://nvd.nist.gov/developers/request-an-api-key. The api key will be sent to your email address. Setup the key as github action secret (WORKSHOP6_NVD_API_KEY).
+
+<br>
+<img style="width:350px;height:100px; float: center;" src="./screens/sast2.png"/>
+<br>
 
 ## DAST
 
@@ -138,7 +145,7 @@ jobs:
         run: scripts/zap-script.sh
 
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: zap report
           path: |
