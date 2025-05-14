@@ -112,7 +112,7 @@ jobs:
 2. Apply NVD API Key from the following website https://nvd.nist.gov/developers/request-an-api-key. The api key will be sent to your email address. Setup the key as github action secret (WORKSHOP6_NVD_API_KEY).
 
 <br>
-<img style="width:500px;height:500px; float: center;" src="./screens/sast2.png"/>
+<img style="width:800px;height:500px; float: center;" src="./screens/sast2.png"/>
 <br>
 
 ## DAST
