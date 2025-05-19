@@ -322,6 +322,13 @@ git restore index2.html
 git status
 ```
 
+28. Setup Claude desktop with GenAI Github Model Context Protocol server. try out this prompt "Under my GitHub account, there's a repository named ProjectAA. Is it possible to merge the test branch into the main branch? Create the pull request and merged it"
+
+https://claude.ai/download
+
+https://github.com/github/github-mcp-server
+
+https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/
 
 
 ## Reference
