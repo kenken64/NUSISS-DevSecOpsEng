@@ -322,7 +322,7 @@ git restore index2.html
 git status
 ```
 
-28. Setup Claude desktop with GenAI Github Model Context Protocol server. try out this prompt "Under my GitHub account, there's a repository named ProjectAA. Is it possible to merge the test branch into the main branch? Create the pull request and merged it"
+28. Setup Claude desktop with GenAI Github Model Context Protocol server. try out this prompt "Under my GitHub account, there's a repository named ProjectA. Is it possible to merge the test branch into the main branch? Create the pull request and merged it"
 
 https://claude.ai/download
 
