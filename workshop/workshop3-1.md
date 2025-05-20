@@ -580,3 +580,10 @@ terraform apply -auto-approve -var "do_token=${DO_PAT}" -var "ssh_private_key=/r
 <br>
 <img style="float: center;" src="./screens/ansible26.png">
 <br>
+
+## Optional workshop
+
+Consider installing these tools to help you estimate cloud costs.
+
+https://www.infracost.io/docs/#quick-start
+
