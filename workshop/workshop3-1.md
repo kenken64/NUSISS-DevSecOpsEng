@@ -213,7 +213,7 @@ sudo apt install snap
 ```
 
 ```
-sudo apt install terraform
+sudo snap install terraform --classic
 ```
 
 
