@@ -143,10 +143,10 @@ The instructor will clone your repository at the end
 <br>
 
  * Select Singapore as region
- * Select Ubuntu as the server Image v20.04 x64
+ * Select Ubuntu as the server Image v22.04 x64
 
 <br>
-<img style="float: center;" src="./screens/ansible12.png">
+<img style="float: center;" src="./screens/ansible122.png">
 <br>
 
 * Select cost saving server type (6 USD)
