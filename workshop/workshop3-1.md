@@ -254,7 +254,7 @@ To download and install the Docker Machine binary, type:
 
 
 ```
-curl -O "https://gitlab-docker-machine-downloads.s3.amazonaws.com/v0.16.2-gitlab.19/docker-machine-Linux-x86_64"
+curl -O "https://gitlab-docker-machine-downloads.s3.amazonaws.com/v0.16.2-gitlab.40/docker-machine-Linux-x86_64"
 ```
 The name of the file should be docker-machine-Linux-x86_64. Rename it to docker-machine to make it easier to work with:
 
@@ -289,10 +289,9 @@ docker-machine version
 docker-machine create \
         -d digitalocean \
         --digitalocean-access-token  <do_pat_key> \
-        --digitalocean-image ubuntu-20-04-x64  \
+        --digitalocean-image ubuntu-24-04-x64  \
         --digitalocean-region sgp1 \
         --digitalocean-backups=false \
-        --engine-install-url "https://releases.rancher.com/install-docker/19.03.9.sh" \
         docker-nginx
 ```
 
@@ -380,7 +379,7 @@ variable do_region {
 
 variable do_image {
     type = string 
-    default = "ubuntu-20-04-x64"
+    default = "ubuntu-24-04-x64"
 }
 
 variable do_size {
