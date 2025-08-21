@@ -254,7 +254,7 @@ variable do_region {
 
 variable do_image {
     type = string
-    default = "ubuntu-20-04-x64"
+    default = "ubuntu-22-04-x64"
 }
 
 variable do_size {
