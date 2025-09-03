@@ -317,6 +317,12 @@ output codeserver_ip {
 
 ```
 
+Remeber to generate the Digital Ocean Personal Access Token and export to the environment variable 
+
+```
+export DO_PAT=<your DO PAT>
+```
+
 ```
 terraform init
 ```
