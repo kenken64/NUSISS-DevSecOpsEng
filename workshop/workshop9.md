@@ -75,38 +75,41 @@ on:
     branches: [githubcicd]
 
 jobs:
-  test:
+  sast:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Install Dependencies
-        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-        run: |
-          npm ci --force
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
 
-      - name: OWASP Dependency Check
+      - name: Install dependencies
+        run: npm ci --force
+
+      - name: Download OWASP Dependency-Check
         run: |
           wget https://github.com/dependency-check/DependencyCheck/releases/download/v12.1.1/dependency-check-12.1.1-release.zip
-          unzip dependency-check-12.1.1-release.zip
+          unzip -q dependency-check-12.1.1-release.zip -d $HOME/dependency-check
 
-      - name: Run scan with ODC
+      - name: Run OWASP Dependency-Check
         run: |
-          dependency-check/bin/dependency-check.sh --project "bitcoin" --nvdApiKey ${{ secrets.WORKSHOP6_NVD_API_KEY }} --out . --scan .
+          chmod +x $HOME/dependency-check/dependency-check/bin/dependency-check.sh
+          $HOME/dependency-check/dependency-check/bin/dependency-check.sh \
+            --project "bitcoin" \
+            --nvdApiKey ${{ secrets.WORKSHOP6_NVD_API_KEY }} \
+            --out . \
+            --scan . \
+            --disableOssIndex
 
-      - name: Archive production artifacts
+      - name: Archive SAST report
         uses: actions/upload-artifact@v4
         with:
-          name: sast report
-          path: |
-            ./dependency-check-report.html
-
-
+          name: sast-report
+          path: ./dependency-check-report.html
 ```
 
 2. Apply NVD API Key from the following website https://nvd.nist.gov/developers/request-an-api-key. The api key will be sent to your email address. Setup the key as github action secret (WORKSHOP6_NVD_API_KEY).
