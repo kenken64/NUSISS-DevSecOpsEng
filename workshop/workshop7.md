@@ -163,9 +163,8 @@ ansible --version
 ### Implementation
 a. Create a directory called workshop02 in your course repository.
 
-b. Read Step 1 and Step 2 of the following blog
-https://www.digitalocean.com/community/tutorials/how-to-set-up-the-
-code-server-cloud-ide-platform-on-ubuntu-20-04.
+b. Read Step 1 and Step 2 of the following blog ( do not need to run any command in this page, FYI)
+<https://www.digitalocean.com/community/tutorials/how-to-set-up-the-code-server-cloud-ide-platform-on-ubuntu-20-04.html>
 
 c. Change directory into the workshop02 folder
 
