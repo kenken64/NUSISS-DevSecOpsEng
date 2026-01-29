@@ -10,8 +10,8 @@ https://forms.gle/zUSeKCGSsXRyWvSR8
 | S-DOEA - Workshop - Containers and Container Management Workshop 	| [Workshop #3](./workshop/workshop5.md) 	|
 | S-DOEA - Workshop - Infrastructure as Code - Terraform           	| [Workshop #4](./workshop/workshop3-1.md) 	|
 | S-DOEA - Workshop - Infrastructure as Code - Ansible             	| [Workshop #5](./workshop/workshop-ansible.md) 	|
-| S-DOEA - Workshop - DevOps in the Cloud                          	| [Workshop #6](./workshop/workshop6.md) 	|
-| S-DOEA - Workshop - End to end DevOps Engineering and Automation 	| [Workshop #7](./workshop/workshop7.md) 	|
+| S-DOEA - Workshop - Github Actions Deployment - DevOps in the Cloud | [Workshop #6](./workshop/workshop6.md) 	|
+| S-DOEA - Workshop - Design a E2E CICD pipeline                   	| [Workshop #10](./workshop/workshop7.md) 	|
 | S-DOEA - Workshop - Lint, SAST, DAST Workshop                    	| [Workshop #8](./workshop/workshop9.md) 	|
 | S-DOEA - Workshop - Container Security - Docker Scout            	| [Workshop #9](./workshop/workshop-docker-scout.md) 	|
 

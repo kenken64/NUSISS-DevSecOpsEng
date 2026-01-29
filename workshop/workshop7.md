@@ -1,4 +1,4 @@
-# S-DOEA - Workshop 7 - End to end DevOps Engineering and Automation
+# S-DOEA - Workshop 10 - Design a E2E CICD pipeline
 
 
 ## Design and proposed CI CD pipeline for StoolViriiDetect Pte Ltd COVID19 - Internet of Things Project.
