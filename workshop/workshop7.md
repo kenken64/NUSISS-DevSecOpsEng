@@ -1,4 +1,4 @@
-# S-DOEA - Workshop 9 - Design a E2E CICD pipeline
+# S-DOEA - Workshop 9 - Design a comprehensive E2E CICD pipeline
 
 
 ## Design and proposed CI CD pipeline for StoolViriiDetect Pte Ltd COVID19 - Internet of Things Project.
