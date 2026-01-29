@@ -8,10 +8,12 @@ https://forms.gle/zUSeKCGSsXRyWvSR8
 | S-DOEA - Workshop - Github Workshop                              	| [Workshop #1](./workshop/workshop2.md) 	|
 | S-DOEA - Workshop - Jenkins Installation                         	| [Workshop #2](./workshop/workshop1.md) 	|
 | S-DOEA - Workshop - Containers and Container Management Workshop 	| [Workshop #3](./workshop/workshop5.md) 	|
-| S-DOEA - Workshop - Terraform and Ansible (IAC)                  	| [Workshop #5](./workshop/workshop3-1.md) 	|
+| S-DOEA - Workshop - Infrastructure as Code - Terraform           	| [Workshop #4](./workshop/workshop3-1.md) 	|
+| S-DOEA - Workshop - Infrastructure as Code - Ansible             	| [Workshop #5](./workshop/workshop-ansible.md) 	|
 | S-DOEA - Workshop - DevOps in the Cloud                          	| [Workshop #6](./workshop/workshop6.md) 	|
 | S-DOEA - Workshop - End to end DevOps Engineering and Automation 	| [Workshop #7](./workshop/workshop7.md) 	|
 | S-DOEA - Workshop - Lint, SAST, DAST Workshop                    	| [Workshop #8](./workshop/workshop9.md) 	|
+| S-DOEA - Workshop - Container Security - Docker Scout            	| [Workshop #9](./workshop/workshop-docker-scout.md) 	|
 
 <table>
     <tr>
