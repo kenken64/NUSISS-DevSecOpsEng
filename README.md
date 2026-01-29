@@ -7,8 +7,7 @@ https://forms.gle/zUSeKCGSsXRyWvSR8
 |------------------------------------------------------------------	|-------------	|
 | S-DOEA - Workshop - Github Workshop                              	| [Workshop #1](./workshop/workshop2.md) 	|
 | S-DOEA - Workshop - Jenkins Installation                         	| [Workshop #2](./workshop/workshop1.md) 	|
-| <s>S-DOEA - Workshop - Jenkins - CI Workshop</s>(Deprecated)                        	| [Workshop #3](./workshop/workshop3.md) 	|
-| S-DOEA - Workshop - Containers and Container Management Workshop 	| [Workshop #4](./workshop/workshop5.md) 	|
+| S-DOEA - Workshop - Containers and Container Management Workshop 	| [Workshop #3](./workshop/workshop5.md) 	|
 | S-DOEA - Workshop - Terraform and Ansible (IAC)                  	| [Workshop #5](./workshop/workshop3-1.md) 	|
 | S-DOEA - Workshop - DevOps in the Cloud                          	| [Workshop #6](./workshop/workshop6.md) 	|
 | S-DOEA - Workshop - End to end DevOps Engineering and Automation 	| [Workshop #7](./workshop/workshop7.md) 	|
