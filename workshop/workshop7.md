@@ -1,18 +1,26 @@
-# S-DOEA - Workshop 9 - Design a comprehensive E2E CICD pipeline
+# S-DOEA – Workshop 9: Designing a Comprehensive End-to-End CI/CD Pipeline
 
 
-## Design and proposed CI CD pipeline for StoolViriiDetect Pte Ltd COVID19 - Internet of Things Project.
+## Objective
 
-To detect covid19 cluster as early as possible, SG GovHighTech recently awarded StoolViriiDetect Pte Ltd the project to use their stool detection sensor solution in every residential area islandwide. The collected data should be sent to the Health Authority for analysis twice a day via a secure cloud channel. Kindly proposed an end to end CI CD pipeline for this project.
+Design and propose a CI/CD pipeline for StoolViriiDetect Pte Ltd's COVID-19 IoT Project.
 
-Things that the team should consider as below:-
-* Public Web App and API with a geolocation-based map showing a possible cluster
-* Private Web App with a map showing possible cluster and additional info
-* Integrated with the trace together mobile app to notify users that a potential new cluster. (Near to realtime)
-* Live update (firmware) to all the deployed sensors
-* Name all the technological stacks in terms of DevOps and implementation of your proposal.
-* The solution must be regional within the country. (Areas)
+## Background
 
-https://www.youtube.com/watch?v=XeFOpSNgSGk
+In support of early detection of COVID-19 clusters, SG GovHighTech has awarded StoolViriiDetect Pte Ltd a nationwide contract to deploy its stool-based viral detection sensor solution across all residential areas in Singapore. Sensor data must be transmitted to the Health Authority twice daily via a secure cloud channel for analysis. Your team is tasked with proposing a robust, end-to-end CI/CD pipeline to support the delivery and ongoing operation of this solution.
 
-https://www.youtube.com/watch?v=nN9d_bLE-vM&t=127s
+## Requirements and Considerations
+
+The proposed solution should address the following:
+
+* A public-facing web application and API featuring a geolocation-based map that visualises potential COVID-19 clusters.
+* A private web application providing an enhanced cluster map with additional operational and analytical information for authorised personnel.
+* Integration with the TraceTogether mobile application to deliver near real-time notifications to users regarding newly identified potential clusters.
+* Over-the-air (OTA) firmware update capability for all deployed sensors to ensure continuous improvement and security patching.
+* A clear articulation of the DevOps toolchain and technology stack proposed for both the pipeline and the overall implementation.
+* A region-based architecture that segments the solution by geographical areas within Singapore.
+
+## Reference Materials
+
+* https://www.youtube.com/watch?v=XeFOpSNgSGk
+* https://www.youtube.com/watch?v=nN9d_bLE-vM&t=127s
