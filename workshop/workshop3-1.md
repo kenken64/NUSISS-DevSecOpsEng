@@ -1,4 +1,4 @@
-# S-DOEA - Workshop 5 - Terraform and Ansible
+# S-DOEA - Workshop 4 - Terraform and Ansible
 
 ## Pre-requisites 
 * Digital Ocean Account
