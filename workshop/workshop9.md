@@ -92,8 +92,8 @@ jobs:
 
       - name: Download OWASP Dependency-Check
         run: |
-          wget https://github.com/dependency-check/DependencyCheck/releases/download/v12.1.1/dependency-check-12.1.1-release.zip
-          unzip -q dependency-check-12.1.1-release.zip -d $HOME/dependency-check
+          wget https://github.com/dependency-check/DependencyCheck/releases/download/v12.2.2/dependency-check-12.2.2-release.zip
+          unzip -q dependency-check-12.2.2-release.zip -d $HOME/dependency-check
 
       - name: Run OWASP Dependency-Check
         run: |
