@@ -2,6 +2,10 @@
 
 https://forms.gle/zUSeKCGSsXRyWvSR8
 
+### Workshop App
+
+https://dsoea-workshop-app-production.up.railway.app/
+
 
 | **Workshop**                                                    	| **URL**     	|
 |------------------------------------------------------------------	|-------------	|
