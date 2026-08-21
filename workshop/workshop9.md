@@ -100,7 +100,7 @@ jobs:
           chmod +x $HOME/dependency-check/dependency-check/bin/dependency-check.sh
           $HOME/dependency-check/dependency-check/bin/dependency-check.sh \
             --project "bitcoin" \
-            --nvdApiKey ${{ secrets.WORKSHOP6_NVD_API_KEY }} \
+            --nvdDatafeed 'https://open-vulnerability-data-mirror-production.up.railway.app/nvdcve-{0}.json.gz' \
             --out . \
             --scan . \
             --disableOssIndex
@@ -111,12 +111,6 @@ jobs:
           name: sast-report
           path: ./dependency-check-report.html
 ```
-
-2. Apply NVD API Key from the following website https://nvd.nist.gov/developers/request-an-api-key. The api key will be sent to your email address. Setup the key as github action secret (WORKSHOP6_NVD_API_KEY).
-
-<br>
-<img style="width:800px;height:500px; float: center;" src="./screens/sast2.png"/>
-<br>
 
 ## DAST
 
