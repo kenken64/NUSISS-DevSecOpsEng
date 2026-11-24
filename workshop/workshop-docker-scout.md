@@ -1,4 +1,4 @@
-# S-DOEA - Workshop 9 - Container Security - Docker Scout
+# S-DOEA - Workshop 8 - Container Security - Docker Scout
 
 
 1. Spin off a digital ocean ubuntu 24.04 (1vcpu 1GB RAM) instance with docker engine and cli installed
