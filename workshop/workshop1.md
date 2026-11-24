@@ -133,7 +133,7 @@ When prompted to customize Jenkins, choose **Install suggested plugins**. Wait f
 
 ![Create First Admin User form](./screens/new-workshop2/Screenshot%20From%202026-10-21%2010-12-05.png)
 
-On **Create First Admin User**, enter your own username, password, full name, and email address. Click **Save and Continue**. Keep these credentials for subsequent workshops.
+On **Create First Admin User**, enter your own username, password, full name, and email address. Click **Save and Continue**.
 
 ### 17. Set the Jenkins URL
 
@@ -152,3 +152,11 @@ When **Jenkins is ready!** appears, click **Start using Jenkins**. Confirm that 
 ## Submission
 
 Take a screenshot of your Jenkins dashboard with the Jenkins URL visible in the browser address bar. Save it to the workshop submission folder specified by your instructor.
+
+## Cleanup
+
+After submitting your screenshot, open the EC2 console in **Asia Pacific (Singapore)**. Remove only the resources you created exclusively for this workshop.
+
+1. **Terminate the EC2 instance.** Under **Instances**, select your Jenkins instance (for example, `workshop2-jenkins`). Note its security group ID and key pair name. Choose **Instance state** → **Terminate (delete) instance**, confirm, and wait until the state is **Terminated**.
+2. **Delete the security group.** If you created a dedicated group in step 8, open **Security Groups** and select the ID you noted. Choose **Actions** → **Delete security groups** and confirm. Skip this step if you reused an existing group.
+3. **Delete the key pair.** Under **Key Pairs**, select the workshop key pair you noted. Choose **Actions** → **Delete**, enter `Delete` to confirm, and click **Delete**. Remove the matching `.pem` file from your computer if you used it only for this workshop.
